@@ -8,7 +8,7 @@
     "lint": "ng lint",
     "heroku-postbuild": "ng build --prod",
     "e2e": "ng e2e",
-    "start": "node server.js --proxy-config proxy.json"
+    "start": "node server.js"
   },
   "private": true,
   "dependencies": {
