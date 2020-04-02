@@ -1,0 +1,76 @@
+
+.right-image {
+  float: right;
+  margin-left: 15px;
+  height:90%;
+}
+
+@media screen and (max-width: 991px) {
+  .main-panel .right-image {
+    float: none;
+    height: auto;
+    margin: 0px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f6fa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5f6fa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+@media screen and (max-width: 991px) {
+  .main-panel .content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main-panel .biograpy-container {
+    height:50%
+  }
+}
+@media screen and (max-width: 991px) {
+  .main-panel .left-image {
+    float: none;
+    height: auto;
+  }
+}
+.content {
+  min-height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  padding-top: 5%;
+  padding-left:25%;
+  padding-bottom: 15%;
+  padding-right:25%;
+}
+
+a {
+  color: #1d253b;
+}
+
+.biography-container {
+  display:flex;
+  height: 90%;
+}
+
+.biography {
+  overflow: auto;
+  text-align: justify;
+}

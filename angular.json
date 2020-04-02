@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "vice-and-virtue": {
@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -121,8 +122,16 @@
               "devServerTarget": "vice-and-virtue:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "vice-and-virtue"
+    }
+  },
+  "defaultProject": "vice-and-virtue",
+  "cli": {
+    "analytics": "d7a75d48-d9bf-41c0-b279-ae50bfd1be1f"
+  }
 }

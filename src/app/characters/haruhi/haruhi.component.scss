@@ -1,0 +1,111 @@
+.left-image {
+  float: left;
+  margin-right: 15px;
+  height:90%;
+}
+
+.right-image {
+  float: right;
+  margin-left: 15px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f6fa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5f6fa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+@media screen and (max-width: 991px) {
+  .main-panel .content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main-panel .biograpy-container {
+    height:50%
+  }
+}
+@media screen and (max-width: 991px) {
+  .main-panel .left-image {
+    float: none;
+    height: auto;
+  }
+}
+.content {
+  min-height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  padding-top: 5%;
+  padding-left:25%;
+  padding-bottom: 15%;
+  padding-right:25%;
+}
+
+a {
+  color: #1d253b;
+}
+
+.biography-container {
+  display:flex;
+  height: 90%;
+}
+
+.biography {
+  overflow: auto;
+  text-align: justify;
+  font-size: 11px;
+}
+
+.modal-body {
+  padding-top: 0px;
+}
+
+h4 {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.extras {
+  float: right;
+  display:inline-block;
+}
+
+.btn-simple, .btn-simple:focus{
+  padding: 0px 4px;
+  color: #f5f6fa !important;
+  background-color: #1d253b !important;
+  border-color: #1d253b !important;
+  margin: 0px 2px;
+}
+
+.journal-container {
+  overflow:auto;
+  height:300px;
+  font-size:10px;
+}
+
+.btn-simple:hover {
+  color: #1d253b !important;
+  background-color: #f5f6fa !important;
+}
+
+.pop {
+  color: #ffa4ca;
+}

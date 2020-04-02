@@ -1,0 +1,53 @@
+<!-- Navbar -->
+<body class="white-content">
+<nav class="navbar bg-white navbar-expand-lg navbar-absolute">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a *ngIf="loggedIn" class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="loggedIn" class="nav-link" href="story">Story</a>
+        </li>
+        <li class="dropdown nav-item">
+          <a *ngIf="loggedIn" href="characters" class="dropdown-toggle nav-link" data-toggle="dropdown">
+            Characters
+            <i class="tim-icons icon-minimal-down" style="font-size: 10px;"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
+            <li class="nav-link"><a href="characters/haruhi" class="nav-item dropdown-item">Haruhi</a></li>
+            <li class="nav-link"><a href="characters/akio" class="nav-item dropdown-item">Akio</a></li>
+            <li class="nav-link"><a href="characters/aika" class="nav-item dropdown-item">Aika</a></li>
+            <li class="nav-link"><a href="characters/haru" class="nav-item dropdown-item">Haru</a></li>
+            <li class="nav-link"><a href="characters" class="nav-item dropdown-item">
+              All Characters
+              <i class="tim-icons icon-double-right" style="top: 3px; font-size: 8px; padding-left: 3px;"></i>
+            </a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="loggedIn" class="nav-link" href="archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="loggedIn" class="nav-link" (click)="logout()" href="/">
+            Logout
+          </a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="!loggedIn" href="#" data-toggle="modal" class="nav-link" data-target="#loginModal">
+            Login
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<app-login (loggedIn)="loggedIn=$event"></app-login>
+</body>

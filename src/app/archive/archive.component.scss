@@ -1,0 +1,99 @@
+.sidebar a {
+  color: #222a42 !important;
+  display: block;
+  padding: 10px;
+}
+
+.white-content .sidebar {
+  box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.0), 0 4px 20px 0 rgba(0, 0, 0, 0.0) !important;
+}
+
+p {
+  color:#222a42 !important;
+}
+
+.multi-collapse .nav.nav-pills.flex-column {
+  margin-top: 0;
+}
+
+a.nav-link.ml-3.my-1 {
+  padding-top:0;
+}
+
+.rotate {
+  transform: rotate(180deg); /* Equal to rotateZ(45deg) */
+  transition: .5s;
+}
+
+.left-image {
+  float: left;
+  width: 45%;
+  margin-right: 15px;
+}
+
+.right-image {
+  float: right;
+  width: 45%;
+  margin-left: 15px;
+}
+
+
+.nav i {
+  font-size: 10px;
+  text-align: center;
+  position: relative;
+  color: #222a42;
+  margin: 0;
+  float: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f6fa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5f6fa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.sidebar .navbar{
+  padding:0 0 0 15px;
+}
+
+.sidebar {
+  width:200px;
+  display:inline-block;
+}
+
+@media screen and (max-width: 991px) {
+  .main-panel .content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+.content {
+  min-height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  padding-top: 75px;
+  padding-left:225px;
+  padding-bottom: 150px;
+  padding-right:150px;
+}
+
+.post-container {
+  height: 100%;
+  overflow: auto;
+  text-align: justify;
+}
