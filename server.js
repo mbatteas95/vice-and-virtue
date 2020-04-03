@@ -5,8 +5,8 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended : true}))
 const mongoose = require('mongoose');
-const User = require('./server/model/user');
-const Post = require('./server/model/post');
+const User = require('./model/user');
+const Post = require('./model/post');
 const url = "mongodb+srv://blogAdmin:blogAdmin@blogcluster-jupcg.mongodb.net/test?retryWrites=true&w=majority"
 const uri = 'mongodb://localhost/blogDb';
 
