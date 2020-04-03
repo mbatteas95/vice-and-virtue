@@ -5,27 +5,6 @@
   height:90%;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f5f6fa;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #f5f6fa;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-
 @media screen and (max-width: 991px) {
   .main-panel .content {
     padding-left: 0px !important;
@@ -53,6 +32,7 @@
   overflow: auto;
   text-align: justify;
   font-size: 11px;
+  padding-right: 7px;
 }
 
 

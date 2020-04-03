@@ -2,7 +2,7 @@ import {Component, ViewChild, ElementRef, OnInit} from '@angular/core';
 import {AddPostService} from './add-post.service';
 import {Post} from '../models/post.model';
 import {CommonService} from '../service/common.service';
-import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import * as ClassicEditor from '../../assets/ckeditor.js';
 
 @Component({
   selector: 'app-add-post',

@@ -21,7 +21,6 @@ import {NavComponent} from './nav/nav.component';
 import {HomeComponent} from './home/home.component';
 import {ArchiveComponent} from './archive/archive.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
