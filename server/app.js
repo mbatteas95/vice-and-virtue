@@ -1,5 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const path = require('path');
 const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended : true}))
@@ -8,6 +9,14 @@ const User = require('./model/user');
 const Post = require('./model/post');
 const url = "mongodb+srv://blogAdmin:blogAdmin@blogcluster-jupcg.mongodb.net/test?retryWrites=true&w=majority"
 const uri = 'mongodb://localhost/blogDb';
+
+// Serve only the static files form the dist directory
+app.use(express.static(__dirname + '/dist/vice-and-virtue'));
+
+app.get('/*', function(req,res) {
+
+  res.sendFile(path.join(__dirname+'/dist/vice-and-virtue/index.html'));
+});
 
 app.post('/api/post/createPost', (req, res) => {
   mongoose.connect(url,  { useNewUrlParser: true, useUnifiedTopology: true } , function(err){
@@ -96,4 +105,5 @@ app.post('/api/post/deletePost', (req, res) => {
   });
 })
 
-app.listen(3000, () => console.log('blog server running on port 3000!'))
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 3000, () => console.log('blog server running on port 3000!'))
